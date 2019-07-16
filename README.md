@@ -1,6 +1,15 @@
 # ts-express-pg-boilerplate
 
 ## Table of Contents
+- [ts-express-pg-boilerplate](#ts-express-pg-boilerplate)
+  * [Table of Contents](#table-of-contents)
+  * [What is ts-express-pg-boilerplate?](#what-is-ts-express-pg-boilerplate-)
+  * [Dependencies](#dependencies)
+  * [Structure](#structure)
+  * [Running ts-express-pg-boilerplate](#running-ts-express-pg-boilerplate)
+  * [License](#license)
+  * [Contributors](#contributors)
+  
 ## What is ts-express-pg-boilerplate?
 Software engineers often need to create REST APIs. Creating the foundation of those is often a manual job, which it doesn't have to be. `ts-express-pg-boilerplate` is boilerplate code which allows you to run a JavaScript based backend out of the box:
 
