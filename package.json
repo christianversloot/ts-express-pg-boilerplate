@@ -4,7 +4,7 @@
   "description": "TypeScript ExpressJS PostgreSQL backend boilerplate code.",
   "main": "backend.js",
   "scripts": {
-    "dev": "yarn run tsc && nodemon -r dotenv/config ./transpiled-app/backend.js",
+    "dev": "yarn run tsc && nodemon --watch -r dotenv/config ./transpiled-app/backend.js",
     "tsc": "yarn install && tslint --project ./tsconfig.json && tsc",
     "prod": "echo \"Todo: add production command with e.g. pm2 process manager\""
   },
