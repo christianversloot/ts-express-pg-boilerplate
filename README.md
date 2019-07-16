@@ -51,3 +51,4 @@ project
 ## Running ts-express-pg-boilerplate
 ## License
 ## Contributors
+* Christian Versloot, https://github.com/christianversloot
