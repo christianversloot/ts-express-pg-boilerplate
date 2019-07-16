@@ -27,6 +27,7 @@ Software engineers often need to create REST APIs. Creating the foundation of th
 `ts-express-pg-boilerplate` has these dependencies:
 
 * **NodeJS**: https://nodejs.org/en/, we advise LTS.
+  * Preferably, install `Yarn` for package management: https://yarnpkg.com/lang/en/docs/install. It is much faster than `npm`.
 * **PostgreSQL**: https://www.postgresql.org/
 
 ## Structure
