@@ -50,5 +50,6 @@ project
 ```
 ## Running ts-express-pg-boilerplate
 ## License
+This work is licensed under the [GNU Affero General Public License](./LICENSE.md). It allows you to use it commercially, modify it, distribute it, and grants permission for patent and private use, under the condition that the limitations and conditions provided by the license are respected.
 ## Contributors
 * Christian Versloot, https://github.com/christianversloot
