@@ -7,9 +7,13 @@
   * [Dependencies](#dependencies)
   * [Structure](#structure)
   * [Running ts-express-pg-boilerplate](#running-ts-express-pg-boilerplate)
+    + [Running in development](#running-in-development)
+    + [Running in production](#running-in-production)
+      - [Harnessing the power of Docker](#harnessing-the-power-of-docker)
+      - [Running it elsewhere](#running-it-elsewhere)
   * [License](#license)
   * [Contributors](#contributors)
-  
+
 ## What is ts-express-pg-boilerplate?
 Software engineers often need to create REST APIs. Creating the foundation of those is often a manual job, which it doesn't have to be. `ts-express-pg-boilerplate` is boilerplate code which allows you to run a JavaScript based backend out of the box:
 
@@ -23,8 +27,6 @@ Software engineers often need to create REST APIs. Creating the foundation of th
 
 * **NodeJS**: https://nodejs.org/en/, we advise LTS.
 * **PostgreSQL**: https://www.postgresql.org/
-
-It is advised to harness the power of containerization with e.g. [Docker](https://www.docker.com/), but this is not required.
 
 ## Structure
 ```
@@ -58,6 +60,12 @@ project
 |   |   |   logger.ts
 ```
 ## Running ts-express-pg-boilerplate
+### Running in development
+### Running in production
+#### Harnessing the power of Docker
+Docker support for production will be added later.
+#### Running it elsewhere
+
 ## License
 This work is licensed under the [GNU Affero General Public License](./LICENSE.md). It allows you to use it commercially, modify it, distribute it, and grants permission for patent and private use, under the condition that the limitations and conditions provided by the license are respected.
 ## Contributors
