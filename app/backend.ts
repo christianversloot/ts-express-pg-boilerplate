@@ -7,9 +7,31 @@ import BodyParser from "body-parser";
 import cors from "cors";
 import express = require("express");
 import PostgreSQL from "pg";
+import Config from "./config";
 import { IConnectedDatabaseClients, IProvidedDatabaseClients } from "./interfaces/DatabaseInterfaces";
 import Routes from "./routes";
 import logger from "./utils/logger";
+
+// Check if environment variables are set
+logger.info("CHECKING ENVIRONMENT COMPLETENESS");
+let environmentComplete: boolean = true;
+if (Config.required_env_variables) {
+  const envKeys = Object.keys(process.env);
+  for (const variable of Config.required_env_variables) {
+    environmentComplete = envKeys.includes(variable);
+    if (!environmentComplete) {
+      break;
+    }
+  }
+} else {
+  environmentComplete = false;
+}
+
+// Log about environment
+logger.info(
+  environmentComplete ? "Loading application-configured environment variables."
+                      : "No application-configured environment variables found; loading default ones.",
+);
 
 // Initialize PostgreSQL clients
 const allDbClientsString: (string | undefined) = process.env.POSTGRES_CLIENTS;
@@ -20,7 +42,7 @@ if (!allDbClientsString) {
   logger.info("No database clients provided in environment variables.");
 } else {
   // Set up database connections
-  const allDbClients: IProvidedDatabaseClients = JSON.parse(allDbClientsString);
+  const allDbClients: IProvidedDatabaseClients = environmentComplete ? JSON.parse(allDbClientsString) : [];
   logger.info(`Found ${Object.keys(allDbClients).length} database client(s) in environment variables.`);
   for (const clientName of Object.keys(allDbClients)) {
     if (allDbClients.hasOwnProperty(clientName)) {
@@ -65,7 +87,8 @@ Promise.all(connectionPromises)
     Routes(backend, connectedDbClients);
 
     // Start the backend
-    backend.listen(process.env.PORT, () => {
-      logger.info(`ExpressJS listening at port ${process.env.PORT}`);
+    const port = environmentComplete ? process.env.PORT : 80;
+    backend.listen(port, () => {
+      logger.info(`ExpressJS listening at port ${port}`);
     });
   });
