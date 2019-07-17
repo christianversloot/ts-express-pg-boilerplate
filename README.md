@@ -22,7 +22,7 @@ Software engineers often need to create REST APIs. Creating the foundation of th
 
 * It was created in `TypeScript` instead of `ES6` to benefit from type checking built into TS. Code is transpiled into JavaScript and then run in a NodeJS process.
 * It nevertheless harnesses the power of `ExpressJS` for managing your REST API. Adding socket based connections with the `socket.io/Express` integration is easy.
-* It utilizes a `controller` based structure which is integrated with routes through a `route handler` which uniformly provides error handling and JWT based authentication. Models are not natively provided, but can be added easily.
+* It utilizes a `controller` based structure that is integrated with routes through a `route handler` which uniformly provides error handling and JWT based authentication. Models are not natively provided, but can be added easily.
 * It expects you to use a `PostgreSQL` database out-of-the-box, but replacing it with e.g. MySQL is easy.
 
 ## Dependencies
@@ -68,7 +68,7 @@ project
 ```
 ## Running ts-express-pg-boilerplate
 ### Running in development mode
-Clone the repository and install all packages by means of the command `yarn install --production=false`. If you wish to run `ts-express-pg-boilerplate` in development mode, open a command prompt, navigate to the project folder and type `yarn run dev`. [You must possible first install Yarn.](https://yarnpkg.com/lang/en/docs/install) It will first go through `tslint` to detect possible TS errors (aborting the process if some are found) and will subsequently run the API by means of [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
+Clone the repository and install all packages by means of the command `yarn install --production=false`. If you wish to run `ts-express-pg-boilerplate` in development mode, open a command prompt, navigate to the project folder and type `yarn run dev`. [You must possibly first install Yarn.](https://yarnpkg.com/lang/en/docs/install) It will first go through `tslint` to detect possible TS errors (aborting the process if some are found) and will subsequently run the API by means of [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
 
 ### Running in production
 #### Harnessing the power of Docker
