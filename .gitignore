@@ -1,4 +1,4 @@
 node_modules/
 transpiled-app/
-.app/pm2.config.ts
+app/pm2.config.ts
 logs/
