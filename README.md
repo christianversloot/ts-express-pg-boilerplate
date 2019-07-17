@@ -87,6 +87,6 @@ Database provisioning is not yet provided and must still be done manually.
 #### Running it elsewhere
 
 ## License
-This work is licensed under the [GNU Affero General Public License](./LICENSE). It allows you to use it commercially, modify it, distribute it, and grants permission for patent and private use, under the condition that the limitations and conditions provided by the license are respected.
+This work is licensed under the [MIT License](./LICENSE). It allows you to use it commercially, modify it, distribute it, and grants permission for private use, under the condition that the limitations and conditions provided by the license are respected.
 ## Contributors
 * Christian Versloot, https://github.com/christianversloot

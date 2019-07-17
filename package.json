@@ -15,7 +15,7 @@
     "url": "git@github.com:christianversloot/ts-express-pg-boilerplate.git"
   },
   "author": "Christian Versloot",
-  "license": "GNU AGPLv3",
+  "license": "MIT",
   "dependencies": {
     "@types/cors": "^2.8.5",
     "@types/dotenv": "^6.1.1",
