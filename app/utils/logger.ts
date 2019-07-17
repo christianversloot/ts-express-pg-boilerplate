@@ -7,16 +7,16 @@ const { combine, timestamp, printf } = winston.format;
  */
 
 // Create log format
-const logFormat: Format = printf(({ level, message, msgTimestamp }): string => `${msgTimestamp} [${level}] ${message}`);
+const logFormat: Format = printf((info) => `${info.timestamp} [${info.level}] ${info.message}`);
 
 // Create default logger
 const logger = winston.createLogger({
   format: combine(
-    timestamp(),
+    timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
     logFormat,
   ),
   transports: [
-    new winston.transports.Console(),
+    new (winston.transports.Console)(),
   ],
 });
 

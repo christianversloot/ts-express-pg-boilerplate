@@ -71,7 +71,7 @@ project
 ```
 ## Running ts-express-pg-boilerplate
 ### Running in development mode
-Clone the repository and install all packages by means of the command `yarn install --production=false`. If you wish to run `ts-express-pg-boilerplate` in development mode, open a command prompt, navigate to the project folder and type `yarn run dev`. [You must possibly first install Yarn.](https://yarnpkg.com/lang/en/docs/install) It will first go through `tslint` to detect possible TS errors (aborting the process if some are found) and will subsequently run the API by means of [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
+Clone the repository and install all packages by means of the command `yarn install --production=false`. You are responsible for setting up your own local PostgreSQL database(s) which must be configured in `./app/pm2.config.ts`.  If you wish to run `ts-express-pg-boilerplate` in development mode, open a command prompt, navigate to the project folder and type `yarn run dev`. [You must possibly first install Yarn.](https://yarnpkg.com/lang/en/docs/install) It will first go through `tslint` to detect possible TS errors (aborting the process if some are found) and will subsequently run the API by means of [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
 
 To do:
 * Add file watching that automatically transpiles TypeScript into pm2-watched JavaScript files when changes occur.

@@ -1,6 +1,6 @@
 import express = require("express");
-import PostgreSQL from "pg";
 import Controllers from "../controllers/Controllers";
+import { IConnectedDatabaseClients } from "../interfaces/DatabaseInterfaces";
 
 /**
  * Generic route handler.
@@ -8,11 +8,11 @@ import Controllers from "../controllers/Controllers";
  * and provides generic error handling from the Controllers.
  */
 export default (
-  call: (req: express.Request, res: express.Response, dbClient: PostgreSQL.Client) => void,
+  call: (req: express.Request, res: express.Response, connectedDbClients: IConnectedDatabaseClients) => void,
   req: express.Request,
   res: express.Response,
   omitCheck: boolean = false,
-  dbClient: PostgreSQL.Client,
+  connectedDbClients: IConnectedDatabaseClients,
 ) => {
   // Check which object to use
   const rqObj = req.body ? req.body : req.param;
@@ -24,13 +24,13 @@ export default (
     try {
       if (!omitCheck) {
         if (Controllers.token.verify()) {
-          return call(req, res, dbClient);
+          return call(req, res, connectedDbClients);
         }
         return res.status(500).json({
           error: "Invalid token",
         });
       } else {
-        return call(req, res, dbClient);
+        return call(req, res, connectedDbClients);
       }
     } catch (error) {
       return res.status(500).json({

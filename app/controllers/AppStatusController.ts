@@ -1,5 +1,5 @@
 import express = require("express");
-import PostgreSQL from "pg";
+import { IConnectedDatabaseClients } from "../interfaces/DatabaseInterfaces";
 import logger from "../utils/logger";
 
 /**
@@ -16,8 +16,13 @@ export default class AppStatusController {
    * @param <express.Response> res ExpressJS response object
    * @return <express.Response.json> HTTP 200 JSON Response
    */
-// tslint:disable-next-line: variable-name
-  public static checkIfAppIsOnline(_req: express.Request, res: express.Response, _dbClient: PostgreSQL.Client): void {
+  public static checkIfAppIsOnline(
+    // tslint:disable-next-line: variable-name
+    _req: express.Request,
+    res: express.Response,
+    // tslint:disable-next-line: variable-name
+    _connectedDbClients: IConnectedDatabaseClients,
+  ): void {
     // Create Response
     const applicationStatus: IAppOnlineResponse = {
       is_online: true,

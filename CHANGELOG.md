@@ -1,6 +1,9 @@
 # ts-express-pg-boilerplate
 Changelog for the `ts-express-pg-boilerplate` project.
 
+## Version 0.0.5
+* Add multi database support.
+
 ## Version 0.0.4
 * Corrected `.gitignore` file.
 

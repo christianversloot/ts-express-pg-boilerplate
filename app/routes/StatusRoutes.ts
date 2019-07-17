@@ -1,12 +1,12 @@
 import express = require("express");
-import PostgreSQL from "pg";
 import AppStatusController from "../controllers/AppStatusController";
+import { IConnectedDatabaseClients } from "../interfaces/DatabaseInterfaces";
 import RouteHandler from "./RouteHandler";
 
 /**
  *    CRUD HTTP endpoints for Status routes.
  */
-export default (backend: express.Application, dbClient: PostgreSQL.Client) => {
+export default (backend: express.Application, connectedDbClients: IConnectedDatabaseClients) => {
 
   /**
    * @route /app-status
@@ -16,7 +16,7 @@ export default (backend: express.Application, dbClient: PostgreSQL.Client) => {
   backend.get(
     "/app-status",
     (req: express.Request, res: express.Response) =>
-      RouteHandler(AppStatusController.checkIfAppIsOnline, req, res, true, dbClient),
+      RouteHandler(AppStatusController.checkIfAppIsOnline, req, res, true, connectedDbClients),
   );
 
 };
