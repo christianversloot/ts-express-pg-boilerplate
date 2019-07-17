@@ -1,6 +1,8 @@
 # ts-express-pg-boilerplate
 Out-of-the-box TypeScript ExpressJS PostgreSQL boilerplate code for APIs.
 
+* [Changelog](CHANGELOG.md)
+
 ## Table of Contents
 - [ts-express-pg-boilerplate](#ts-express-pg-boilerplate)
   * [Table of Contents](#table-of-contents)

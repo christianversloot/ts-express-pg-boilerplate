@@ -1,6 +1,9 @@
 # ts-express-pg-boilerplate
 Changelog for the `ts-express-pg-boilerplate` project.
 
+# Version 0.0.3
+* Moved environment variables to `/app/pm2.config.ts`; provided example file with variables used by the backend.
+
 # Version 0.0.2
 * Replaced `nodemon` for development use with `pm2`.
 * Added Docker and Docker Compose files for running in production with `pm2`.
