@@ -2,13 +2,13 @@
 Changelog for the `ts-express-pg-boilerplate` project.
 
 ## Version 0.0.7 (in development)
-* Add default `PORT` and `POSTGRES_CLIENTS` variables for when they are not provided.
+* Added default `PORT` and `POSTGRES_CLIENTS` variables for when they are not provided.
 
 ## Version 0.0.6
-* Add PostgreSQL support with bridge network to Docker compose file for production.
+* Added PostgreSQL support with bridge network to Docker compose file for production.
 
 ## Version 0.0.5
-* Add multi database support.
+* Added multi database support.
 
 ## Version 0.0.4
 * Corrected `.gitignore` file.
