@@ -85,6 +85,12 @@ This repository provides a Docker Compose file which is configured to start the 
 Database provisioning is not yet provided and must still be done manually.
 
 #### Running it elsewhere
+You are also free to run the API elsewhere, without Docker, e.g. directly on some host system. You may find the following pointers useful:
+* `yarn run tsc` transpiles the TypeScript backend code into executable JavaScript into the `./transpiled-app` folder.
+* You could then do something like:
+  * `node ./transpiled-app/backend.js` (we **discourage** this for production - [read why here](https://www.freecodecamp.org/news/you-should-never-ever-run-directly-against-node-js-in-production-maybe-7fdfaed51ec6/)).
+  * `pm2 ./transpiled-app/backend.js` if you provide the required environment variables (`PORT` and `POSTGRES_CLIENTS` yourself).
+  * `pm2 ./transpiled-app/pm2.config.js` if you wish to run with the environment variables as configured for `pm2` usage.
 
 ## License
 This work is licensed under the [MIT License](./LICENSE). It allows you to use it commercially, modify it, distribute it, and grants permission for private use, under the condition that the limitations and conditions provided by the license are respected.
