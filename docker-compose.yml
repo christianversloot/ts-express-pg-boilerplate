@@ -1,6 +1,7 @@
 version: '3'
 services:
   api:
+    container_name: ts-express-pg-api
     build: .
     ports:
       - '80:80'
