@@ -66,7 +66,7 @@ project
 ```
 ## Running ts-express-pg-boilerplate
 ### Running in development mode
-If you wish to run `ts-express-pg-boilerplate` in development mode, open a command prompt, navigate to the project folder and type `yarn run dev`. [You must possible first install Yarn.](https://yarnpkg.com/lang/en/docs/install) It will first go through `tslint` to detect possible TS errors (aborting the process if some are found) and will subsequently run the API by means of [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
+Clone the repository and install all packages by means of the command `yarn install --production=false`. If you wish to run `ts-express-pg-boilerplate` in development mode, open a command prompt, navigate to the project folder and type `yarn run dev`. [You must possible first install Yarn.](https://yarnpkg.com/lang/en/docs/install) It will first go through `tslint` to detect possible TS errors (aborting the process if some are found) and will subsequently run the API by means of [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
 
 ### Running in production
 #### Harnessing the power of Docker

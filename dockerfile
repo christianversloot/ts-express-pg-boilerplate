@@ -5,5 +5,5 @@ WORKDIR /usr/src/app
 RUN npm install pm2 -g
 COPY ./transpiled-app ./transpiled-app
 COPY ./package.json ./package.json
-RUN npm install
+RUN npm install --production
 CMD ["pm2-runtime", "./transpiled-app/backend.js"]
