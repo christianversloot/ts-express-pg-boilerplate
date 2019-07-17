@@ -4,7 +4,7 @@ module.exports = {
         env: {
           PORT: 80,
           POSTGRES_CLIENTS: {
-            db: "postgres://username:password@host:port/database-name?ssl=false",
+            db: "postgres://username:password@host:port/database-name?ssl=false", // Host is 'database' if you use the Docker compose file.
           },
         },
         name: "api",

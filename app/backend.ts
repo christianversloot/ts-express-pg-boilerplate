@@ -26,7 +26,7 @@ if (!allDbClientsString) {
     if (allDbClients.hasOwnProperty(clientName)) {
       const connectionString: string = allDbClients[clientName];
       logger.info(`Connecting with database client ${clientName} at ${connectionString}.`);
-      const dbClient = new PostgreSQL.Client({ connectionString });
+      const dbClient = new PostgreSQL.Pool({ connectionString });
       connectionPromises.push(new Promise((resolve) => {
         return dbClient.connect().then(() => {
           logger.info("Successfully connected to database.");

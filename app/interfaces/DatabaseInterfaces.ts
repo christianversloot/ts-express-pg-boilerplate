@@ -13,5 +13,5 @@ export interface IProvidedDatabaseClients {
  * Interface describing database clients the system connected with.
  */
 export interface IConnectedDatabaseClients {
-  [key: string]: PostgreSQL.Client;
+  [key: string]: PostgreSQL.Pool;
 }

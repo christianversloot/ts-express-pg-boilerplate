@@ -3,5 +3,21 @@ services:
   api:
     container_name: ts-express-pg-api
     build: .
+    restart: always
     ports:
       - '80:80'
+    networks:
+      - api-db-bridge
+    depends_on:
+      - database
+  database:
+    container_name: ts-express-pg-database
+    image: postgres:11
+    restart: always
+    networks:
+      - api-db-bridge
+    environment:
+      POSTGRES_PASSWORD: example
+networks:
+  api-db-bridge:
+    driver: bridge
