@@ -29,6 +29,9 @@ Software engineers often need to create REST APIs. Creating the foundation of th
 * **NodeJS**: https://nodejs.org/en/, we advise LTS.
   * Preferably, install `Yarn` for package management: https://yarnpkg.com/lang/en/docs/install. It is much faster than `npm`.
 * **PostgreSQL**: https://www.postgresql.org/
+* If you wish to use our Docker based production script:
+  * **Docker**: https://docs.docker.com/install/
+  * **Docker Compose**: https://docs.docker.com/compose/install/
 
 ## Structure
 ```
@@ -63,11 +66,16 @@ project
 ```
 ## Running ts-express-pg-boilerplate
 ### Running in development mode
-If you wish to run `ts-express-pg-boilerplate` in development mode, open a command prompt, navigate to the project folder and type `yarn run dev`. [You must possible first install Yarn.](https://yarnpkg.com/lang/en/docs/install) It will first go through `tslint` to detect possible TS errors (aborting the process if some are found) and will subsequently run the API by means of [nodemon](https://github.com/remy/nodemon). Nodemon watches the project folder for changes to the source code and automatically restarts the backend if some are detected. If you wish to restart the backend manually, type 'rs' (restart) into the terminal where `nodemon` runs and hit Enter. 
+If you wish to run `ts-express-pg-boilerplate` in development mode, open a command prompt, navigate to the project folder and type `yarn run dev`. [You must possible first install Yarn.](https://yarnpkg.com/lang/en/docs/install) It will first go through `tslint` to detect possible TS errors (aborting the process if some are found) and will subsequently run the API by means of [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
 
 ### Running in production
 #### Harnessing the power of Docker
-Out-of-the-box Docker based production readiness will be added ASAP.
+This repository provides a Docker Compose file which is configured to start the backend at port `80` together with an empty PostgreSQL database that runs on port `5432` and harnesses a `bridge` network to allow the backend to reach it. The API itself runs in [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
+
+(Work in progress)
+
+Database provisioning is not yet provided and must still be done manually.
+
 #### Running it elsewhere
 
 ## License

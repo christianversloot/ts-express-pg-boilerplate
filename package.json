@@ -4,9 +4,11 @@
   "description": "TypeScript ExpressJS PostgreSQL backend boilerplate code.",
   "main": "backend.js",
   "scripts": {
-    "dev": "yarn run tsc && nodemon --watch -r dotenv/config ./transpiled-app/backend.js",
+    "dev": "yarn run tsc && pm2 start ./transpiled-app/backend.config.js --watch",
+    "development": "yarn run dev",
     "tsc": "yarn install && tslint --project ./tsconfig.json && tsc",
-    "prod": "echo \"Todo: add production command with e.g. pm2 process manager\""
+    "prod": "yarn run tsc && docker-compose build && docker-compose up -d",
+    "production": "yarn run prod"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "pm2": "^3.5.1"
   }
 }
