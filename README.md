@@ -38,13 +38,16 @@ Software engineers often need to create REST APIs. Creating the foundation of th
 ## Structure
 ```
 project
+|   .gitignore
+|   CHANGELOG.md
+|   docker-compose.yml
+|   dockerfile
+|   LICENSE
+|   package.json
+|   tslint.json
+|   yarn.lock
 │   README.md
 │   tsconfig.json
-|   tslint.json
-|   package.json
-|   LICENSE
-|   .gitignore
-|   .env.example    
 │
 └───node_modules
 └───app
