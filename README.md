@@ -70,6 +70,9 @@ project
 ### Running in development mode
 Clone the repository and install all packages by means of the command `yarn install --production=false`. If you wish to run `ts-express-pg-boilerplate` in development mode, open a command prompt, navigate to the project folder and type `yarn run dev`. [You must possibly first install Yarn.](https://yarnpkg.com/lang/en/docs/install) It will first go through `tslint` to detect possible TS errors (aborting the process if some are found) and will subsequently run the API by means of [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
 
+To do:
+* Add file watching that automatically transpiles TypeScript into pm2-watched JavaScript files when changes occur.
+
 ### Running in production
 #### Harnessing the power of Docker
 This repository provides a Docker Compose file which is configured to start the backend at port `80` together with an empty PostgreSQL database that runs on port `5432` and harnesses a `bridge` network to allow the backend to reach it. The API itself runs in [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
