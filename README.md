@@ -80,8 +80,6 @@ To do:
 #### Harnessing the power of Docker
 This repository provides a Docker Compose file which is configured to start the backend at port `80` together with an empty PostgreSQL database that runs on port `5432` and harnesses a `bridge` network to allow the backend to reach it. The API itself runs in [pm2](http://pm2.keymetrics.io/docs/usage/environment/).
 
-Database provisioning is not yet provided and must be done manually.
-
 #### Running it elsewhere
 You are also free to run the API elsewhere, without Docker, e.g. directly on some host system. You may find the following pointers useful:
 * `yarn run tsc` transpiles the TypeScript backend code into executable JavaScript into the `./transpiled-app` folder.
