@@ -1,6 +1,9 @@
 # ts-express-pg-boilerplate
 Changelog for the `ts-express-pg-boilerplate` project.
 
+## Version 0.0.6
+* Add PostgreSQL support with bridge network to Docker compose file for production.
+
 ## Version 0.0.5
 * Add multi database support.
 
