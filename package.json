@@ -4,7 +4,7 @@
   "description": "TypeScript ExpressJS PostgreSQL backend boilerplate code.",
   "main": "backend.js",
   "scripts": {
-    "dev": "yarn run tsc && pm2 start ./transpiled-app/backend.config.js --watch",
+    "dev": "yarn run tsc && pm2 start ./transpiled-app/pm2.config.js --watch",
     "development": "yarn run dev",
     "tsc": "yarn install && tslint --project ./tsconfig.json && tsc",
     "prod": "yarn run tsc && docker-compose build && docker-compose up -d",
