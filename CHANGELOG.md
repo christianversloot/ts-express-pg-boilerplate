@@ -1,6 +1,9 @@
 # ts-express-pg-boilerplate
 Changelog for the `ts-express-pg-boilerplate` project.
 
+# Version 0.0.4
+* Corrected `.gitignore` file.
+
 # Version 0.0.3
 * Moved environment variables to `/app/pm2.config.ts`; provided example file with variables used by the backend.
 
