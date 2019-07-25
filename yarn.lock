@@ -3,9 +3,9 @@
 
 
 "@babel/code-frame@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
-  integrity sha512-OfC2uemaknXr87bdLUkWog7nYuliM9Ij5HUcajsVcMCpQrcLmtxRbVFTIqmcSkSeYRBFBRxs2FiUqFJDLdiebA==
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
+  integrity sha512-27d4lZoomVyo51VegxI20xZPuSHusqbQag/ztrBC7wegWoQ1nLREPVSKSW8byhTlzTKyNE4ifaTA6lCp7JjpFw==
   dependencies:
     "@babel/highlight" "^7.0.0"
 
@@ -48,10 +48,10 @@
     "@opencensus/core" "^0.0.8"
     uuid "^3.2.1"
 
-"@pm2/agent-node@~1.1.8":
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/@pm2/agent-node/-/agent-node-1.1.9.tgz#a6937b58471f0ac712a6c9a497ee629f306ac6f9"
-  integrity sha512-DEtMFWr7B6uYl/8pxH3+q6hk+D1eavfeojDmkdk68w0s7CHb7pPDffkaRgRVPnl85Yw4i66IHYzLVb8NGy09lw==
+"@pm2/agent-node@^1.1.10":
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/@pm2/agent-node/-/agent-node-1.1.10.tgz#29fafc9d1b75288dec87b6af1216ddfab8ea9b06"
+  integrity sha512-xRcrk7OEwhS3d/227/kKGvxgmbIi6Yyp27FzGlFNermEKhgddmFaRnmd7GRLIsBM/KB28NrwflBZulzk/mma6g==
   dependencies:
     debug "^3.1.0"
     eventemitter2 "^5.0.1"
@@ -76,13 +76,13 @@
     ws "^5.1.0"
 
 "@pm2/io@^4.1.2":
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/@pm2/io/-/io-4.2.4.tgz#ca10b677ea58f50e2b0a7486a0ec1b8163338897"
-  integrity sha512-ZpAVXfTXTvK3OMwgSMt/9jKP18xI2gCPBt3JGlltBwVIAWmj7nASW28/Z1Th7IOMyF4XK0h6wrXmd8Je01CeNA==
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/@pm2/io/-/io-4.2.5.tgz#9c019ac5f3e08ee9961dbfef9cfcef71ed241c07"
+  integrity sha512-Te6gz4zfbAsIwCvZCpHg+wN9BcVd8T8RldS8BMBfTWCOGvTfguEGSlUGX2qthbJbsAPG2E47uVS43mPmZtZjEA==
   dependencies:
     "@opencensus/core" "^0.0.9"
     "@opencensus/propagation-b3" "^0.0.8"
-    "@pm2/agent-node" "~1.1.8"
+    "@pm2/agent-node" "^1.1.10"
     async "~2.6.1"
     debug "3.1.0"
     event-loop-inspector "~1.2.0"
@@ -156,14 +156,14 @@
   integrity sha512-FwI9gX75FgVBJ7ywgnq/P7tw+/o1GUbtP0KzbtusLigAOgIgNISRK0ZPl4qertvXSIE8YbsVJueQ90cDt9YYyw==
 
 "@types/node@*":
-  version "12.6.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.3.tgz#44d507c5634f85e7164707ca36bba21b5213d487"
-  integrity sha512-7TEYTQT1/6PP53NftXXabIZDaZfaoBdeBm8Md/i7zsWRoBe0YwOXguyK8vhHs8ehgB/w9U4K/6EWuTyp0W6nIA==
+  version "12.6.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.8.tgz#e469b4bf9d1c9832aee4907ba8a051494357c12c"
+  integrity sha512-aX+gFgA5GHcDi89KG5keey2zf0WfZk/HAQotEamsK2kbey+8yGKcson0hbK8E+v0NArlCJQCqMP161YhV6ZXLg==
 
 "@types/node@^8.0.7":
-  version "8.10.50"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.50.tgz#f3d68482b1f54b5f4fba8daaac385db12bb6a706"
-  integrity sha512-+ZbcUwJdaBgOZpwXeT0v+gHC/jQbEfzoc9s4d0rN0JIKeQbuTrT+A2n1aQY6LpZjrLXJT7avVUqiCecCJeeZxA==
+  version "8.10.51"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.51.tgz#80600857c0a47a8e8bafc2dae6daed6db58e3627"
+  integrity sha512-cArrlJp3Yv6IyFT/DYe+rlO8o3SIHraALbBW/+CcCYW/a9QucpLI+n2p4sRxAvl2O35TiecpX2heSZtJjvEO+Q==
 
 "@types/pg-types@*":
   version "1.11.4"
@@ -1609,9 +1609,9 @@ lodash.last@^3.0.0:
   integrity sha1-JC9mMRLdTG5jcoxgo8kJ0b2tvUw=
 
 lodash@^4.17.10, lodash@^4.17.14:
-  version "4.17.14"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
-  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 log-driver@^1.2.7:
   version "1.2.7"
@@ -2067,9 +2067,9 @@ pg-int8@1.0.1:
   integrity sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==
 
 pg-pool@^2.0.4:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-2.0.6.tgz#7b561a482feb0a0e599b58b5137fd2db3ad8111c"
-  integrity sha512-hod2zYQxM8Gt482q+qONGTYcg/qVcV32VHVPtktbBJs0us3Dj7xibISw0BAAXVMCzt8A/jhfJvpZaxUlqtqs0g==
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-2.0.7.tgz#f14ecab83507941062c313df23f6adcd9fd0ce54"
+  integrity sha512-UiJyO5B9zZpu32GSlP0tXy8J2NsJ9EFGFfz5v6PSbdz/1hBLX1rNiiy5+mAm5iJJYwfCv4A0EBcQLGWwjbpzZw==
 
 pg-types@~2.0.0:
   version "2.0.1"
@@ -2083,9 +2083,9 @@ pg-types@~2.0.0:
     postgres-interval "^1.1.0"
 
 pg@^7.11.0:
-  version "7.11.0"
-  resolved "https://registry.yarnpkg.com/pg/-/pg-7.11.0.tgz#a8b9ae9cf19199b7952b72957573d0a9c5e67c0c"
-  integrity sha512-YO4V7vCmEMGoF390LJaFaohWNKaA2ayoQOEZmiHVcAUF+YsRThpf/TaKCgSvsSE7cDm37Q/Cy3Gz41xiX/XjTw==
+  version "7.12.0"
+  resolved "https://registry.yarnpkg.com/pg/-/pg-7.12.0.tgz#e1b883afe14acb0db58385c20bb7236c7e0aef56"
+  integrity sha512-q54Ic0oBXfDZMwheP8ALeUX32TUXvF7SNgAlZjyhkDuFCJkQCgcLBz0Be5uOrAj3ljSok/CI9lRbYzEko0z1Zw==
   dependencies:
     buffer-writer "2.0.0"
     packet-reader "1.0.0"
